@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p, quote {
+  text-align: center;
+  color: aqua;
+  position: relative;
+  z-index: 1; /* Ensure h2 is above the background elements */
+}
+
+#content-container {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1; /* Ensure contents are above the background elements */
+}
+
+#fireflies-container {
+  position: fixed; /* Fix the container to the viewport */
+  width: 100%;
+  height: 100%;
+  background-color: #010115;
+  z-index: -1; /* Move the container behind other elements */
+}
+
+.firefly {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: moveFirefly 10s infinite alternate, fadeIn 2s ease-in; /* Added fadeIn animation */
+}
+
+@keyframes moveFirefly {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(100px, -100px); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#cursor {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, 50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(rgb(101, 87, 180), rgba(102, 89, 177, 0.521), transparent);
+  filter: blur(30px);
+  pointer-events: none;
+  z-index: 0; /* Move the cursor behind other elements */
+  transition: 0.15s ease;
+}
+
+#comingsoon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
