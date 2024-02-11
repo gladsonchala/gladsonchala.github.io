@@ -5,14 +5,293 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gemechis Chala</title>
+
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <!-- CSS Libraries -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Services Cards -->
+  <link rel="stylesheet" href="projects-cards/styles.css">
+
+  <!-- For Nav Bar -->
+  <link rel="stylesheet" href="navigation/styles.css" />
+  <!-- --------------- ------------ -->
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/hero.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
+  <!--
+      - #Background Animation
+    -->
+
   <div id="fireflies-container"></div>
   <div id="cursor"></div>
   <div class="content-container">
-    <div id="coming-soon">
+
+
+    <!--
+      - #Header And Navigation
+    -->
+
+    <header>
+      <!-- NAVIGATION SECTION -->
+      <nav class="navbar navbar-expand-custom navbar-mainbg">
+        <a class="navbar-brand navbar-logo" href="#">Gemechis Chala</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <div class="hori-selector">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+            <li class="nav-item active">
+              <a class="nav-link" href="#dashboard"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bio"><i class="far fa-user"></i>About Me</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#portfolio"><i class="fas fa-briefcase"></i>Portfolio</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#elevator-pitch"><i class="fas fa-rocket"></i>Elevator Pitch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials"><i class="fas fa-star"></i>Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#documents"><i class="fas fa-file-download"></i>Documents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-me"><i class="far fa-envelope"></i>Contact Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog"><i class="far fa-file-alt"></i>My Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <!--  Sections For My Portfolio -->
+
+
+    <!--
+      - #dashboard
+    -->
+
+    <section id="dashboard" class="hero content-section">
+      <div class="section-content">
+        <!-- Hero Start -->
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-md-6">
+              <div class="hero-content">
+                <div class="hero-text">
+                  <div>
+                    <h2 style="margin-left: 8px;">I'm</h2>
+                  </div>
+                  <h1 style="color: aqua;">Gemechis Chala</h1>
+                  <div style="height: 50px;">
+                    <h2 class="typed-text"></h2>
+                  </div>
+                </div>
+                <div class="hero-btn">
+                  <a class="btn" href="#documents">Hire Me</a>
+                  <a class="btn" href="mailto:gladsonchala@gmail.com">Contact Me</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 d-none d-md-block">
+              <div class="hero-image">
+                <img src="/images/me-hero-img.png" alt="Hero Image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Hero End -->
+      </div>
+    </section>
+
+
+    <!--
+      - #About Me
+    -->
+
+    <section id="bio" class="content-section">
+      <div class="section-content">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I am Gemechis Chala(aka <span style="color: cyan;">ScorpiDev</span>), a passionate and dedicated web developer with expertise in
+              HTML, CSS, and JavaScript. I specialize in building responsive and user-friendly websites that provide a
+              seamless user experience.</p>
+            <p>With a keen eye for design and attention to detail, I create visually appealing and functional websites
+              that meet clients' and users' needs. I stay up-to-date with the latest web development trends and
+              technologies to deliver high-quality solutions.</p>
+          </div>
+          <div class="col-md-6">
+            <img src="/images/me-img.png" style="max-height: 350px;" alt="Image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--
+      - #Portfolio
+    -->
+
+    <!-- <section id="portfolio" class="content-section">
+      <div class="section-content">
+        <h2>Portfolio</h2><br><br><br>
+        <div class="container">
+          <div class="box" style="--clr:rgba(0, 247, 255, 0.75);">
+            <span style="--i:0"></span>
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+            <img src="./projects-cards/empops-logo.png">
+            <div class="content">
+              <h2>
+                My Portfolio
+              </h2>
+              <p>
+                Here's my portfolio document showcasing my skills, projects, and achievements. Click the button below to
+              </p>
+              <a href="#">Download</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+    <!--
+      - #Elevator-pitch
+    -->
+
+    <section id="elevator-pitch" class="content-section"></section>
+    <div class="section-content">
+      <h2>Elevator Pitch</h2>
+      <div class="video-placeholder">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID"
+          frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    </section>
+
+
+
+    <!--
+      - #Testimonials
+    -->
+    <!-- NOTE: Images and names are generated from https://xsgames.co/randomusers/ -->
+    <section id="testimonials" class="content-section">
+      <div class="section-content">
+        <h2>Testimonials</h2>
+        <div class="wrapper">
+          <div class="card">
+            <img class="testim-img" src="/images/Rozella-Busbin.png" alt="Circle Image">
+            <h4>Rozella Busbin</h4>
+            <p>"Gemechis has significantly improved our software's performance. His code is clean, efficient, and easy to understand. Highly recommended!"</p>
+          </div>
+          <div class="card">
+            <img class="testim-img" src="/images/Issac-Grandchamp.png" alt="Circle Image">
+            <h4>Issac Grandchamp</h4>
+            <p>"The level of professionalism and technical expertise displayed by Gemechis is outstanding. He was responsive and helpful with all my queries. A great experience overall."</p>
+          </div>
+          <div class="card">
+            <img class="testim-img" src="/images/Olin-Morishita.png" alt="Circle Image">
+            <h4>Olin Morishita</h4>
+            <p>"I'm impressed with the quality of Gemechis's work. His solutions are reliable and meet all our needs. I couldn't ask for more."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      - #Documents and My Portfolio
+    -->
+    <section id="documents" class="content-section" style="min-height: 450px;">
+      <div class="section-content">
+        <h2>Documents</h2>
+        <ul class="document-list">
+          <li>
+            <a href="#">
+              <img class="pdf-icon" src="https://img.icons8.com/color/48/000000/pdf.png" alt="PDF Icon">
+              <span>Resume</span>
+              <img class="download-icon" src="https://img.icons8.com/color/48/000000/download.png" alt="Download Icon">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="pdf-icon" src="https://img.icons8.com/color/48/000000/pdf.png" alt="PDF Icon">
+              <span>Portfolio</span>
+              <img class="download-icon" src="https://img.icons8.com/color/48/000000/download.png" alt="Download Icon">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="pdf-icon" src="https://img.icons8.com/color/48/000000/pdf.png" alt="PDF Icon">
+              <span>Certificates</span>
+              <img class="download-icon" src="https://img.icons8.com/color/48/000000/download.png" alt="Download Icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!--
+      - #Contact Me
+    -->
+
+    <section id="contact-me" class="content-section">
+      <div class="section-content">
+        <h2>Contact Me</h2>
+        <div class="container">
+          <div class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button class="submit-btn">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--
+      - #footer
+    -->
+
+    <footer id="footer" class="content-section">
+      <div class="section-content">
+        <h2>Footer</h2>
+        <p>&copy; Gemechis Chala 2024</p>
+        <a href="https://linkedin.com/in/gemechischala" class="fa fa-linkedin"></a>
+        <a href="https://github.com/gladsonchala" class="fa fa-github"></a>
+        <a href="https://t.me/ScorpiDev" class="fa fa-telegram"></a>
+        <a href="https://twitter.com/gladsonchala" class="fa fa-twitter"></a>
+      </div>
+    </footer>
+    <!-- <div id="coming-soon">
       <h3>In the meantime, remember this quote from Thomas
         Edison: <br><em>"Genius is one percent inspiration and ninety-nine percent perspiration." </em>
       </h3>
@@ -22,9 +301,50 @@
       </h4>
       <br>
       <h3>Thank you!</h3>
-    </div>
+    </div> -->
   </div>
+  </div>
+
+  <!--
+      - #Blog
+    -->
+  <!-- 
+    <section id="blog" class="content-section">
+      <div class="section-content">
+        <h2>Blog/Articles</h2>
+        <p>Sharing your thoughts, insights, or industry-related content through a blog section to showcase your
+          knowledge
+          and passion.</p>
+      </div>
+    </section> -->
+
+  <!-- Scripts -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Contact Javascript File -->
+  <script src="mail/jqBootstrapValidation.min.js"></script>
+  <script src="mail/contact.js"></script>
+
+
+  <!-- JavaScript code -->
+  <!-- custom script -->
   <script src="script.js"></script>
+  <!-- For Nav Bar -->
+  <script src="navigation/script.js"></script>
+  <!-- ------------------ ------------ -->
 </body>
 
 </html>
