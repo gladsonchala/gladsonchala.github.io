@@ -149,9 +149,9 @@ p{
 
 /* Add some spacing between paragraphs */
 #bio p {
-  margin-bottom: 20px;
+    text-align: left;
+    margin: 20px;
 }
-
 /* Add a border and box shadow to the image */
 #bio img {
   border: 2px solid #ccc;
