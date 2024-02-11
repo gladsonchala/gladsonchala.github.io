@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+/* * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #d28fff;
+} */
+
+.container{
+	position: relative;
+	display: flex;
+	gap: 50px;
+}
+
+.container .box{
+	position: relative;
+	top: 0;
+	width: 360px;
+	height: 360px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	background: var(--clr);
+	margin: 25px 0px;
+	padding: 60px;
+	transition: 0.5s;
+}
+
+.container .box:hover{
+	top: 100px;
+}
+
+
+.container .box::before{
+	content: '';
+	position: absolute;
+	inset: 30px 30px 30px 30px;
+	border: 5px solid #fff;
+	border-radius: 20px;
+	filter: drop-shadow(10px 10px 5px rgba(0,0,0,0,0.5));
+	pointer-events: none;
+	transition: 0.5s;
+	z-index: 1;
+}
+
+.container .box.box:hover::before{
+	inset: -200px 30px 30px 30px;
+}
+
+.container .box img{
+	position: absolute;
+	z-index: 10;
+	top: 120px;
+	max-width: 120px;
+	transition: 0.5s;
+	filter: drop-shadow(10px 10px 5px rgba(0,0,0,0,0.5));
+}
+
+.container .box:hover img{
+	top: -150px;
+}
+
+.container .box .content{
+	opacity: 0;
+	transition: 0.5s;
+	text-align: center;
+}
+
+.container .box:hover .content{
+	opacity: 1;
+}
+
+.container .box .content h2{
+	font-size: 2em;
+	color: #fff;
+	text-align: center;
+}
+
+.container .box .content p{
+	color: #fff;
+	text-align: center;
+}
+
+.container .box .content a{
+	position: relative;
+	top: 20px;
+	padding: 10px 30px;
+	background: #fff;
+	display: inline-block;
+	color: #333;
+	font-weight: 600;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.container .box span{
+	position: absolute;
+	inset: 0;
+	rotate: calc(var(--i) * 90deg);
+}
+
+.container .box span::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-repeat: repeat;
+	height: 10px;
+	background-image: radial-gradient(circle at 10px -5px, transparent 12px, #333 13px);
+	background-size: 20px 20px;
+	animation: animate 0.5s linear infinite;
+	animation-play-state: paused;
+}
+
+.container .box:hover span::before{
+	animation-play-state: running;
+}
+
+@keyframes animate{
+	0%{
+		background-position: 0 0;
+	}
+	100%{
+		background-position: 40px 0;
+	}
+}
+
+
+/* Code For Responsiveness */
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center; /* Add this line */
+}
+
+/* For desktop: */
+.box {
+	width: 30%; /* Display 3 boxes per row */
+}
+
+/* For tablets: */
+@media screen and (max-width: 768px) {
+	.box {
+		width: 50%; /* Display 2 boxes per row */
+	}
+}
+
+/* For mobile: */
+@media screen and (max-width: 480px) {
+	.box {
+		width: 100%; /* Display 1 box per row */
+	}
+}
