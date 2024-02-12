@@ -277,7 +277,7 @@ p{
 
 .card {
   align-items: center;
-  height: 300px;
+  height: 350px;
   flex: 1 0 200px;
   margin: var(--spacing-small);
   padding: var(--spacing-medium);
